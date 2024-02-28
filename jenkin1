@@ -12,6 +12,11 @@ pipeline {
                 sh 'mvn clean install'
             }
         } 
+        stage('push') {
+            steps {
+                sh 'aws s3 cp studentapp-2.2-SNAPSHOT.war s3://jnkin-bkt'
+            }
+        } 
 
     }
 }
