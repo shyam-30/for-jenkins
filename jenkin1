@@ -15,7 +15,7 @@ pipeline {
         } 
         stage('push') {
             steps {
-                sh 'aws s3 studentapp-2.2-SNAPSHOT${BUILD_TIMESTAMP}.war s3://jnkin-bkt'
+                sh 'aws s3 cp studentapp-2.2-SNAPSHOT${BUILD_TIMESTAMP}.war s3://jnkin-bkt'
             }
         } 
 
