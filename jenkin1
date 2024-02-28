@@ -12,5 +12,10 @@ pipeline {
                 echo 'again webhooks chlo ek bar or kro'
             }
         }
+        stage('hokka11') {
+            steps {
+                echo 'again webhooks chlo ek bar or kro'
+            }
+        }
     }
 }
