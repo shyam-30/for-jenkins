@@ -15,7 +15,7 @@ pipeline {
         } 
         stage('push') {
             steps {
-                sh 'aws s3 cp /var/jenkins_home/workspace/pipeforgit/target/studentapp-2.2-SNAPSHOT${BUILD_TIMESTAMP}.war s3://jnkin-bkt'
+                sh 'aws s3 studentapp-2.2-SNAPSHOT${BUILD_TIMESTAMP}.war s3://jnkin-bkt'
             }
         } 
 
