@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('webhooks') {
             steps {
-                echo 'Hello World2 3537dbmsfbjs'
+                echo 'Hello World2 shyam sahu this side'
             }
         }
     }
