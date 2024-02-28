@@ -9,7 +9,7 @@ pipeline {
         }
         stage('hokka') {
             steps {
-                echo 'again webhooks'
+                echo 'again webhooks chlo ek bar or kro'
             }
         }
     }
