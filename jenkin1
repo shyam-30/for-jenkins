@@ -2,20 +2,16 @@ pipeline {
     agent any
 
     stages {
-        stage('webhooks') {
+        stage('checkout') {
             steps {
-                echo 'Hello World2 shyam sahu this side'
+                git 'https://github.com/Pritam-Khergade/student-ui.git'
             }
         }
-        stage('hokka') {
+        stage('build') {
             steps {
-                echo 'again webhooks chlo ek bar or kro'
+                sh 'mvn clean install'
             }
-        }
-        stage('hokka11') {
-            steps {
-                echo 'again webhooks chlo ek bar or kro'
-            }
-        }
+        } 
+
     }
 }
